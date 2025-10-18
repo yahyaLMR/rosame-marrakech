@@ -1,6 +1,8 @@
 import React from "react";
 import "./hero.css";
-
+import parfum1 from "../assets/parfum 1.webp";
+import eauDesRoses1 from "../assets/eau des roses 1.webp";
+import cheveux1 from "../assets/cheveux 1.webp";
 export default function Hero() {
   return (
     <>
@@ -111,15 +113,21 @@ export default function Hero() {
             </a>
           </div>
           <div className="hero-images">
-            <a href="#products"><img
-              src="/src/assets/cheveux 1.webp"
-              alt="Produits de beauté à la rose Rosâme Marrakech"
-            /></a>
-            <a href="#products"><img
-              src="/src/assets/eau des roses 1.webp"
-              alt="Eau de rose naturelle"
-            /></a>
-            <a href="#products"><img src="/src/assets/parfum 1.webp" alt="Parfum à la rose" /></a>
+            <a href="#products">
+              <img
+                src={cheveux1}
+                alt="Produits de beauté à la rose Rosâme Marrakech"
+              />
+            </a>
+            <a href="#products">
+              <img
+                src={eauDesRoses1}
+                alt="Eau de rose naturelle"
+              />
+            </a>
+            <a href="#products">
+              <img src={parfum1} alt="Parfum à la rose" />
+            </a>
           </div>
         </div>
       </header>
