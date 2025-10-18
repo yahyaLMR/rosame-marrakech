@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './navbar.css'
+import logo from '/src/assets/logo.png'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,8 +21,8 @@ export default function Navbar() {
 
   return (
     <nav className={isScrolled ? 'scrolled' : ''}>
-      <img src="/src/assets/logo.png" alt="Rosâme Marrakech Logo" />
-      
+      <img src={logo} alt="Rosâme Marrakech Logo" />
+
       <div className="menu-toggle" onClick={toggleMenu}>
         <span></span>
         <span></span>
